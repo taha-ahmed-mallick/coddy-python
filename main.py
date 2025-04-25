@@ -1,4 +1,4 @@
-number = float(input())
-while number>=3.5 :
-    number/=2
-print(number)
+for i in range(1, 11):
+    print(i)
+    if i==5:
+        break
