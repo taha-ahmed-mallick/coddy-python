@@ -1,13 +1,6 @@
-def print_pattern(rows, cols):
-    # Write your code here
-    for _ in range(rows):
-        print("*" * cols)
-    pass
-
-
-# Get input for rows and columns
-rows = int(input())
-cols = int(input())
-
-# Call the function
-print_pattern(rows, cols)
+iteration = int(input())
+sumation = 0
+for i in range(0, iteration):
+    usr_in = int(input())
+    sumation+=usr_in
+print(sumation)
