@@ -1,12 +1,14 @@
-def sigma(n):
+def is_valid(username, password):
     # Write your code below
-    sumation = 0
-    while n > 0:
-        sumation+=n
-        n-=1
-    return sumation
+    if username == "admin":
+        return True
+    elif username== "user" and password == "qweasd":
+        return True
+    else:
+        return False
 
-n = int(input())
+usr_name = input()
+password = input()
 # Call the function below
-result = sigma(n)
+result = is_valid(usr_name, password)
 print(result)
