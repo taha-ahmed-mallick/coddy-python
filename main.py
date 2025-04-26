@@ -1,10 +1,11 @@
-def change_element(lst, index, new_element):
+def merge(lst1, lst2):
     # Write code here
-    lst[index] = new_element
-    return lst
+    for i in range(len(lst2)):
+        lst1.append(lst2[i])
+    lst1.sort()
+    return lst1
 
-usr_lst = input().split(",")
-index = int(input())
-new_element = input()
-changed = change_element(usr_lst, index, new_element)
+lst1 = list(map(int, input().split(",")))
+lst2 = list(map(int, input().split(",")))
+changed = merge(lst1, lst2)
 print(changed)
