@@ -1,5 +1,13 @@
-input = int(input())
-fac = 1
-for i in range(1, input+1):
-    fac *= i
-print(fac)
+def print_range(start, end, step):
+    # Write your code here
+    for i in range(start, end, step):
+        print(i)
+    pass
+
+# Get input from user
+start = int(input())
+end = int(input())
+step = int(input())
+
+# Call the function
+print_range(start, end, step)
