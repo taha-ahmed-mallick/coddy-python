@@ -8,7 +8,11 @@ def fizzbuzz(n):
         elif n%3==0:
             return "Fizz"
         else:
-            return f"{n}"
+            string = f"{n}"
+            if "3" in string:
+                return "Almost Fizz"
+            else:
+                return f"{n}"
 
 usr_n = int(input())
 for i in range(1, usr_n+1):
