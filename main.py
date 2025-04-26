@@ -11,5 +11,6 @@ def fizzbuzz(n):
             return f"{n}"
 
 usr_n = int(input())
-result = fizzbuzz(usr_n)
-print(result)
+for i in range(1, usr_n+1):
+    result = fizzbuzz(i)
+    print(result)
