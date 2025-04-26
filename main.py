@@ -1,7 +1,8 @@
-def product(num1, num2):
-    return num1*num2
+def square_number(n):
+    # Write your code below
+    return n**2
 
-num1 = int(input())
-num2 = int(input())
-
-print(product(num1, num2))
+n = int(input())
+# Call the function below
+result = square_number(n)
+print(result)
