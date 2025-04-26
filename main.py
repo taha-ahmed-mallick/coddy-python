@@ -1,11 +1,7 @@
-iteration = int(input())
+def product(num1, num2):
+    return num1*num2
 
-def repeat():
-    sumation = 0
-    for i in range(1, 10001):
-        sumation+=i
-    for i in range(iteration):
-        print(sumation)
-    pass
+num1 = int(input())
+num2 = int(input())
 
-repeat()
+print(product(num1, num2))
