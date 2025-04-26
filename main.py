@@ -1,11 +1,10 @@
-def merge(lst1, lst2):
+def prod(lst):
     # Write code here
-    for i in range(len(lst2)):
-        lst1.append(lst2[i])
-    lst1.sort()
-    return lst1
+    product = 1
+    for i in range(len(lst)):
+        product *= lst[i]
+    return product
 
-lst1 = list(map(int, input().split(",")))
-lst2 = list(map(int, input().split(",")))
-changed = merge(lst1, lst2)
+lst = list(map(int, input().split(",")))
+changed = prod(lst)
 print(changed)
