@@ -1,13 +1,13 @@
-def print_range(start, end, step):
+def print_pattern(rows, cols):
     # Write your code here
-    for i in range(start, end, step):
-        print(i)
+    for _ in range(rows):
+        print("*" * cols)
     pass
 
-# Get input from user
-start = int(input())
-end = int(input())
-step = int(input())
+
+# Get input for rows and columns
+rows = int(input())
+cols = int(input())
 
 # Call the function
-print_range(start, end, step)
+print_pattern(rows, cols)
