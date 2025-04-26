@@ -1,10 +1,12 @@
-def prod(lst):
+def reverse(lst):
     # Write code here
-    product = 1
+    print(lst)
+    rev = []
     for i in range(len(lst)):
-        product *= lst[i]
-    return product
+        print(len(lst)-i-1)
+        rev.append(lst[len(lst)-i-1])
+    return rev
 
 lst = list(map(int, input().split(",")))
-changed = prod(lst)
+changed = reverse(lst)
 print(changed)
