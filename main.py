@@ -1,8 +1,12 @@
-def square_number(n):
+def sigma(n):
     # Write your code below
-    return n**2
+    sumation = 0
+    while n > 0:
+        sumation+=n
+        n-=1
+    return sumation
 
 n = int(input())
 # Call the function below
-result = square_number(n)
+result = sigma(n)
 print(result)
