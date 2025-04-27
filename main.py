@@ -1,10 +1,8 @@
 text = input()
+delimiter = input()
 # Write your code below
-text = text.lower()
+text = text.split()
 
-count = 0
-for char in text:
-    if char == "p":
-        count+=1
+text = delimiter.join(text)
 
-print(count)
+print(text)
