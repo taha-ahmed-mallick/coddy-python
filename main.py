@@ -1,9 +1,13 @@
-def create_pattern(numbers, repeats):
-    # Write your code here
-    numbers = numbers*2
-    numbers = numbers*repeats
-    return numbers
+lst1 = input().split(",")
+lst2 = input().split(",")
+# Write your code below
+result = []
+for i in lst1:
+    add_ele = True
+    for j in lst2:
+        if i == j:
+            add_ele = False
+    if add_ele:
+        result.append(i)
 
-numbers = input().split(", ")
-repeat = int(input())
-print(create_pattern(numbers, repeat))
+print(result)
