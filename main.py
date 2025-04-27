@@ -1,12 +1,8 @@
-def reverse(lst):
-    # Write code here
-    print(lst)
-    rev = []
-    for i in range(len(lst)):
-        print(len(lst)-i-1)
-        rev.append(lst[len(lst)-i-1])
-    return rev
+lst = input().split(",")
+# Write your code below
+updated=[]
+for items in lst:
+    if len(items)>5:
+        updated.append(items)
 
-lst = list(map(int, input().split(",")))
-changed = reverse(lst)
-print(changed)
+print(updated)
