@@ -1,8 +1,10 @@
-lst = list(map(int, input().split(",")))
+text = input()
 # Write your code below
-updated=[]
-for index, num in enumerate(lst):
-    if num < 50 or num%5==0:
-        updated.append(index)
+text = text.lower()
 
-print(updated)
+count = 0
+for char in text:
+    if char == "p":
+        count+=1
+
+print(count)
