@@ -1,30 +1,23 @@
-def find_occurrences(text, pattern):
-    # Write your code here
-    was_found = False
-    occurrence = 0
-    indices = []
-    for i, char in enumerate(text):
-        if pattern[0] == char:
-            pattern_found = True
-            for j, char_ in enumerate(pattern):
-                if i + j <= len(text) - 1:
-                    if char_ != text[i + j]:
-                        pattern_found = False
-                        break
-                else:
-                    pattern_found = False
-            if pattern_found:
-                occurrence += 1
-                indices.append(i)
-    if occurrence:
-        was_found = True
-    return (was_found, occurrence, indices)
+prices = input().split(",")
+for i in range(len(prices)):
+    prices[i] = int(prices[i])
+items = input().split(",")
+budget_per_item = int(input())
+
+affordable_items = []
+cant_afford = 0
+total_needed = 0
 
 
-# Read input
-text = input()
-pattern = input()
+# Write your code below
+for i, price in enumerate(prices):
+    if price <= budget_per_item:
+        affordable_items.append(items[i])
+        total_needed += price
+    else:
+        cant_afford += 1
 
-# Call your function and print the result
-result = find_occurrences(text, pattern)
-print(result)
+
+print("Can buy:", affordable_items)
+print("Total budget needed:", total_needed)
+print("Can't afford:", cant_afford)
