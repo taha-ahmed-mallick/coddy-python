@@ -27,11 +27,14 @@ while True:
     elif choice == 3:
         if len(expenses) != 0:
             summation = sum(expenses)
-            avg = summation/len(expenses)
+            avg = summation / len(expenses)
             print(f"Total expense: {summation}")
             print(f"Average expense: {avg}")
         else:
             print("No expenses recorded yet.")
+    elif choice == 4:
+        expenses.clear()
+        print("All expenses cleared.")
     elif choice == 5:
         print("Exiting the Daily Expense Tracker. Goodbye!")
         break
