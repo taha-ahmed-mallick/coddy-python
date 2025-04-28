@@ -1,13 +1,7 @@
-lst1 = input().split(",")
-lst2 = input().split(",")
-# Write your code below
-result = []
-for i in lst1:
-    add_ele = True
-    for j in lst2:
-        if i == j:
-            add_ele = False
-    if add_ele:
-        result.append(i)
-
-print(result)
+print("Welcome to the Daily Expense Tracker!")
+print("""Menu:
+1. Add a new expense
+2. View all expenses
+3. Calculate total and average expense
+4. Clear all expenses
+5. Exit""")
