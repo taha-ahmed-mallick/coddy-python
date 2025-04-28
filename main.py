@@ -38,3 +38,5 @@ while True:
     elif choice == 5:
         print("Exiting the Daily Expense Tracker. Goodbye!")
         break
+    else:
+        print("Invalid choice. Please try again.")
