@@ -1,3 +1,4 @@
-def get_capital(country_capitals, country_name):
+def update_employee_info(employee_dict, key, value):
     # Write code here
-    return country_capitals[country_name]
+    employee_dict[key] = value
+    return employee_dict
